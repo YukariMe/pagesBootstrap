@@ -1,0 +1,118 @@
+/* Adições */
+:root {
+    --corFundoNavbar: #C16DEA;
+    --corFundoNavbar2: #dabbe9;
+    --corFonteNavbar: rgb(26, 26, 26);
+    --corFonteNavbarHover: rgb(0, 0, 0);
+    --corFonteSubtitulo: rgb(114, 114, 114);
+    --fontenav: monospace;
+}
+
+@font-face {
+  font-family: "Squada";
+  src: url("../fonts/Squada_One/SquadaOne-Regular.ttf") format('woff2');
+}
+
+@font-face {
+  font-family: "Numans";
+  src: url("../fonts/Numans/Numans/Numans-Regular.ttf") format('woff2'); 
+}
+
+body {
+    background-image: url(../img/wallpaper.jpg); /* 1 */
+        background-attachment: fixed; /* 1, 2 */
+        background-position: center; /* 1, 2 */
+        background-repeat: no-repeat; /* 1, 2 */
+        background-size: cover; /* 1, 8 */
+        min-height: 400px;
+        width: 100%;
+        font-family: Numans;
+}
+
+/* Tipografias */
+
+.subtitulo {
+    color: var(--corFonteSubtitulo);
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-family: Squada;
+}
+
+/* Imagens */
+
+img {
+    border-radius: 10px;
+}
+
+/*Navbar*/
+
+.nav-item {
+    color: var(--corFonteNavbar);
+    font-family: var(--fontenav);
+}
+
+.corNavbar {
+    /* background-color: var(--corFundoNavbar);*/
+    background: radial-gradient(circle at center, var(--corFundoNavbar), var(--corFundoNavbar2));
+}
+
+.navbarPrincipal {
+    color: var(--corFonteNavbar);
+}
+
+.nav-link {
+    color: var(--corFonteNavbar);
+    font-size: large;
+}
+
+.nav-link:hover {
+    color: var(--corFonteNavbarHover);
+    text-decoration: underline;
+}
+
+#indieLogo {
+    color: var(--cor0);
+}
+
+.indieLogo {
+    height: 100px;
+}
+
+.navOther {
+    margin-top: 30px;
+}
+
+/* Containers */
+
+.container {
+    background-color: white;
+}
+
+.footer {
+    text-align: center;
+}
+
+.fundoCarrosel {
+    text-align: center  ;
+    padding: 10px;
+}
+
+/* Cards */
+
+.card-img-top {
+    height: 350px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.tituloCard {
+    text-align: center;
+}
+
+.card {
+    margin-top: 50px;
+}
